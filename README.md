@@ -138,7 +138,7 @@ Latest release dry-run verification:
 
 | Date | Node | Summary | Object Payload | Nested Object | Error Payload |
 |---|---|---:|---:|---:|---:|
-| 2026-06-03 | v20.20.2 | 2.22x pino | 1.37x pino | 1.40x pino | 1.25x pino |
+| 2026-06-03 | v20.20.2 | 2.14x pino | 1.30x pino | 1.19x pino | 1.22x pino |
 
 ## Vext Integration
 
@@ -192,3 +192,5 @@ The release gate runs typecheck, tests, build, export checks, source-map checks,
 - `dist/index.d.ts.map`
 
 The packed npm artifact includes the full `dist/` tree and excludes `src/`, `test/`, and `.tmp/`.
+
+Tags matching `v*` trigger the npm publish workflow. The workflow verifies the tag matches `package.json`, runs `npm run test:release`, previews package contents, and publishes to the npm registry using the repository `NPM_TOKEN` secret.

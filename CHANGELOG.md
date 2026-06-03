@@ -4,6 +4,12 @@
 
 暂无。
 
+## [1.0.1] - 2026-06-03
+
+### Fixed
+
+- Adds the tag-triggered npm publish workflow, aligned with `route-core`, so `v*` tags can publish through GitHub Actions.
+
 ## [1.0.0] - 2026-06-03
 
 ### Added

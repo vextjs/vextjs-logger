@@ -1,6 +1,6 @@
 {
   "name": "vextjs-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A zero-runtime-dependency high-performance JSON logger for Vext/VextJS and Node.js services.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -58,7 +58,8 @@
     "url": "https://github.com/vextjs/vextjs-logger/issues"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@types/node": "^18.19.130",
