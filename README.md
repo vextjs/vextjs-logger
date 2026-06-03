@@ -138,7 +138,7 @@ Latest release dry-run verification:
 
 | Date | Node | Summary | Object Payload | Nested Object | Error Payload |
 |---|---|---:|---:|---:|---:|
-| 2026-06-03 | v20.20.2 | 2.44x pino | 1.28x pino | 1.29x pino | 1.27x pino |
+| 2026-06-03 | v20.20.2 | 2.22x pino | 1.37x pino | 1.40x pino | 1.25x pino |
 
 ## Vext Integration
 

@@ -1,11 +1,12 @@
 import { readdir, rm } from "node:fs/promises";
 import { execFile } from "node:child_process";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
 import { build } from "esbuild";
 
 const exec = promisify(execFile);
-const root = resolve(import.meta.dirname, "..");
+const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = resolve(root, ".tmp", "unit-tests");
 const testDir = resolve(root, "test", "unit");
 

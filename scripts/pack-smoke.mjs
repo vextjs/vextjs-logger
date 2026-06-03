@@ -1,8 +1,8 @@
 import { execFile } from "node:child_process";
 import { existsSync } from "node:fs";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
-import { pathToFileURL } from "node:url";
-import { resolve } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { dirname, resolve } from "node:path";
 import { promisify } from "node:util";
 
 const exec = promisify(execFile);
@@ -10,7 +10,7 @@ const npm = process.platform === "win32" ? "npm.cmd" : "npm";
 const execOptions = {
   shell: process.platform === "win32"
 };
-const root = resolve(import.meta.dirname, "..");
+const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const smokeRoot = resolve(root, ".tmp", "pack-smoke");
 const packageRoot = resolve(smokeRoot, "consumer");
 
