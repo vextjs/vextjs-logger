@@ -4,6 +4,13 @@
 
 暂无。
 
+## [1.0.2] - 2026-06-09
+
+### Changed
+
+- Pins direct development dependencies in `package.json` to exact versions already resolved by `package-lock.json`.
+- Keeps runtime dependency surface unchanged.
+
 ## [1.0.1] - 2026-06-03
 
 ### Fixed

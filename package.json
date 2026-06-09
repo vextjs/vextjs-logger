@@ -1,6 +1,6 @@
 {
   "name": "vextjs-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A zero-runtime-dependency high-performance JSON logger for Vext/VextJS and Node.js services.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -62,9 +62,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "^18.19.130",
-    "esbuild": "^0.28.0",
-    "pino": "^10.3.1",
-    "typescript": "^6.0.3"
+    "@types/node": "18.19.130",
+    "esbuild": "0.28.0",
+    "pino": "10.3.1",
+    "typescript": "6.0.3"
   }
 }
